@@ -1,0 +1,63 @@
+{
+  "categories": [
+    {
+      "title": "Mobile",
+      "skills": [
+        { "name": "Kotlin", "level": 3, "icon": "skill-icons:kotlin-dark" },
+        { "name": "Java", "level": 3, "icon": "skill-icons:java-dark" },
+        { "name": "Jetpack Compose", "level": 3, "icon": "mdi:layers-triple" },
+        { "name": "XML Layouts", "level": 2, "icon": "vscode-icons:file-type-xml" }
+      ]
+    },
+    {
+      "title": "Architecture",
+      "skills": [
+        { "name": "MVI", "level": 3, "icon": "mdi:state-machine" },
+        { "name": "MVVM", "level": 3, "icon": "mdi:sitemap" },
+        { "name": "Clean Architecture", "level": 3, "icon": "mdi:cube-outline" },
+        { "name": "Multi-module", "level": 3, "icon": "mdi:folder-multiple-outline" }
+      ]
+    },
+    {
+      "title": "Async",
+      "skills": [
+        { "name": "Coroutines", "level": 3, "icon": "mdi:sync" },
+        { "name": "Flow", "level": 3, "icon": "mdi:chart-timeline-variant" },
+        { "name": "RxJava", "level": 2, "icon": "mdi:swap-horizontal-variant" }
+      ]
+    },
+    {
+      "title": "Testing",
+      "skills": [
+        { "name": "JUnit", "level": 3, "icon": "mdi:test-tube" },
+        { "name": "Mockito", "level": 2, "icon": "mdi:bug-check-outline" },
+        { "name": "Turbine", "level": 2, "icon": "mdi:turbine" }
+      ]
+    },
+    {
+      "title": "AI tools",
+      "skills": [
+        { "name": "Cursor", "level": 3, "icon": "mdi:cursor-default-click" },
+        { "name": "GitHub Copilot", "level": 3, "icon": "mdi:github" },
+        { "name": "Claude", "level": 2, "icon": "mdi:robot-outline" },
+        { "name": "Google Gemini", "level": 2, "icon": "mdi:google" }
+      ]
+    },
+    {
+      "title": "Dev tools",
+      "skills": [
+        { "name": "Android Studio", "level": 3, "icon": "skill-icons:androidstudio-dark" },
+        { "name": "Git", "level": 3, "icon": "skill-icons:git" },
+        { "name": "Jira", "level": 2, "icon": "mdi:jira" },
+        { "name": "Figma", "level": 2, "icon": "skill-icons:figma-dark" },
+        { "name": "Firebase", "level": 3, "icon": "vscode-icons:file-type-firebase" }
+      ]
+    },
+    {
+      "title": "Cloud & CI",
+      "skills": [
+        { "name": "Azure", "level": 2, "icon": "skill-icons:azure-dark" }
+      ]
+    }
+  ]
+}

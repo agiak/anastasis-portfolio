@@ -1,0 +1,30 @@
+{
+  "name": "Anastasis Giakoumatos",
+  "photoUrl": "favicon.svg",
+  "intro": "Senior Android Developer with nearly 7 years of experience delivering production-grade mobile applications across fintech, banking, and igaming domains. Proven track record leading modularization efforts, mentoring developers, and driving code quality in large cross-functional teams. Proficient in Kotlin, Jetpack Compose, and modern Android architectures, with a pragmatic approach to leveraging AI-assisted development tools to accelerate delivery and improve code quality.",
+  "introHtml": "<span class='text-white font-bold'>Senior Android Developer</span> based in <span class='text-white font-bold'>Athens, Greece</span>. Nearly 7 years delivering <span class='text-white font-bold'>production-grade</span> mobile apps across fintech, banking, and igaming. I lead <span class='text-white font-bold'>modularization</span>, mentor developers, and raise <span class='text-white font-bold'>code quality</span> in large cross-functional teams. Daily work in <span class='text-white font-bold'>Kotlin</span>, <span class='text-white font-bold'>Jetpack Compose</span>, and modern architectures—using <span class='text-white font-bold'>AI-assisted tools</span> pragmatically to ship faster with cleaner code.",
+  "webpageTitle": "Anastasis Giakoumatos | Senior Android Developer",
+  "resumeUrl": "/AnastasisGiakoumatosCV.pdf",
+  "socials": [
+    {
+      "name": "GitHub",
+      "url": "https://github.com/agiak",
+      "icon": "mdi:github"
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/in/anastasis-giakoumatos",
+      "icon": "mdi:linkedin"
+    },
+    {
+      "name": "Email",
+      "url": "mailto:anastas.giakoumatos@gmail.com",
+      "icon": "mdi:email"
+    },
+    {
+      "name": "Phone",
+      "url": "tel:+306984470943",
+      "icon": "mdi:phone"
+    }
+  ]
+}
