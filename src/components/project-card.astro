@@ -3,11 +3,13 @@ import { Icon } from 'astro-icon/components';
 const { project } = Astro.props;
 
 const isSlider = project.images.length > 1;
+const showPlayBadge = project.playStoreBadge === true;
+const playHref = project.link;
 ---
 
-<div class="project-card group relative bg-white/5 border border-white/10 rounded-2xl overflow-hidden hover:border-accent/40 transition-all duration-500">
-  <div class="aspect-video overflow-hidden relative bg-[#1a1a1a]">
-    <div class="absolute inset-0 bg-accent/10 group-hover:bg-transparent transition-colors z-10 pointer-events-none"></div>
+<div class="project-card group relative bg-container border border-line rounded-2xl overflow-hidden hover:border-accent/50 hover:bg-surface/50 transition-all duration-500">
+  <div class="aspect-video overflow-hidden relative bg-[#0d1117]">
+    <div class="absolute inset-0 bg-accent/5 group-hover:bg-transparent transition-colors z-10 pointer-events-none"></div>
     
     <div class={`w-full h-full relative ${isSlider ? 'image-slider' : ''}`}>
       {project.images.map((img, index) => (
@@ -22,7 +24,7 @@ const isSlider = project.images.length > 1;
     
     <div class="absolute top-3 right-3 flex gap-2 z-20">
       {project.platforms.map((p) => (
-        <div class="p-1.5 bg-black/60 backdrop-blur-md rounded-lg border border-white/10 text-white/80">
+        <div class="p-1.5 bg-background/90 backdrop-blur-md rounded-lg border border-line text-gray">
           <Icon name={`mdi:${p}`} class="w-4 h-4" />
         </div>
       ))}
@@ -30,27 +32,53 @@ const isSlider = project.images.length > 1;
   </div>
 
   <div class="p-6 space-y-4">
-    <div class="flex justify-between items-start">
-      <div>
-        <span class="text-accent text-[10px] uppercase tracking-widest font-bold">{project.category}</span>
+    <div class="flex justify-between items-start gap-3">
+      <div class="min-w-0">
+        <span class="text-accent font-mono text-[10px] uppercase tracking-[0.2em] font-semibold">{project.category}</span>
         <h3 class="text-xl font-heading font-bold text-white mt-1">{project.title}</h3>
       </div>
-      <a href={project.link} target="_blank" class="text-white/40 hover:text-accent transition-colors">
-        <Icon name="mdi:open-in-new" class="w-6 h-6" />
-      </a>
+      {!showPlayBadge && (
+        <a href={project.link} target="_blank" rel="noopener noreferrer" class="text-white/40 hover:text-accent transition-colors shrink-0" aria-label="Open project link">
+          <Icon name="mdi:open-in-new" class="w-6 h-6" />
+        </a>
+      )}
     </div>
 
-    <p class="text-gray-400 text-sm font-body line-clamp-3">
+    <p class="text-gray text-sm font-body line-clamp-3">
       {project.description}
     </p>
 
-    <div class="flex flex-wrap gap-2 pt-2">
+    <div class="flex flex-wrap gap-2 pt-1">
       {project.tech.map((t) => (
-        <span class="px-2 py-1 bg-white/5 rounded-md text-[10px] text-white/60 border border-white/5">
+        <span class="px-2.5 py-1 rounded-full text-[10px] text-gray border border-line bg-surface font-mono tracking-tight">
           {t}
         </span>
       ))}
     </div>
+
+    {showPlayBadge && (
+      <div class="pt-2">
+        <a
+          href={playHref}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="play-store-badge inline-flex items-center gap-3 rounded-lg bg-background px-3.5 py-2.5 border border-line hover:border-accent/40 transition-colors shadow-md"
+        >
+          <span class="play-store-badge__icon shrink-0" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 4.2c0-.45.48-.73.87-.5l11.4 6.55c.38.22.38.78 0 1L3.87 17.8c-.39.23-.87-.05-.87-.5V4.2z" fill="#00D1FF"/>
+              <path d="M16.8 12.05l-2.43-1.4 2.43-1.4 6.95 4c.39.22.39.78 0 1l-6.95 4-2.43-1.4 4.52-2.6-4.52-2.6z" fill="#00F076"/>
+              <path d="M14.37 10.65L3.87 4.1C3.48 3.87 3 4.15 3 4.6v.05l9.8 8.4 1.57-.4z" fill="#FFCE3A"/>
+              <path d="M3 23.4c0 .45.48.73.87.5l10.5-6.05-1.57-.4L3 4.65V23.4z" fill="#FF3364"/>
+            </svg>
+          </span>
+          <span class="text-left leading-tight">
+            <span class="block text-[10px] text-white/90 font-sans uppercase tracking-[0.06em]">Get it on</span>
+            <span class="block text-[15px] font-semibold text-white tracking-tight font-sans -mt-0.5">Google Play</span>
+          </span>
+        </a>
+      </div>
+    )}
   </div>
 </div>
 
@@ -64,14 +92,11 @@ const isSlider = project.images.length > 1;
 
       let currentIndex = 0;
       setInterval(() => {
-        // Hide current
         images[currentIndex].classList.remove('opacity-100', 'z-0');
         images[currentIndex].classList.add('opacity-0', 'z-[-1]');
         
-        // Move to next
         currentIndex = (currentIndex + 1) % images.length;
         
-        // Show next
         images[currentIndex].classList.remove('opacity-0', 'z-[-1]');
         images[currentIndex].classList.add('opacity-100', 'z-0');
       }, 3500);

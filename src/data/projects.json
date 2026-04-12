@@ -6,7 +6,8 @@
     "tech": ["Kotlin", "C2PA", "Blockchain", "Play Store"],
     "platforms": ["google-play"],
     "link": "https://play.google.com/store/apps/details?id=net.honestli.androidapp",
-    "category": "Freelance"
+    "category": "Freelance",
+    "playStoreBadge": true
   },
   {
     "title": "Cariboo — Car Management",
