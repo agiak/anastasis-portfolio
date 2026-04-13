@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Android avatar">
+  <rect width="128" height="128" rx="64" fill="#0D1117"/>
+  <g fill="#3DDC84">
+    <rect x="34" y="50" width="60" height="46" rx="10"/>
+    <rect x="23" y="55" width="8" height="30" rx="4"/>
+    <rect x="97" y="55" width="8" height="30" rx="4"/>
+    <rect x="44" y="93" width="9" height="18" rx="4.5"/>
+    <rect x="75" y="93" width="9" height="18" rx="4.5"/>
+    <path d="M45 46c0-10.5 8.5-19 19-19s19 8.5 19 19v3H45z"/>
+  </g>
+  <circle cx="56" cy="40" r="2.8" fill="#0D1117"/>
+  <circle cx="72" cy="40" r="2.8" fill="#0D1117"/>
+  <path d="M48 22l-6-10" stroke="#3DDC84" stroke-width="4" stroke-linecap="round"/>
+  <path d="M80 22l6-10" stroke="#3DDC84" stroke-width="4" stroke-linecap="round"/>
+</svg>
