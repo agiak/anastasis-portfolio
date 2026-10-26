@@ -42,20 +42,37 @@ import localData from '../data/home.json';
             </p>
           </a>
         ))}
-        <a
-          href="mailto:agcodinglp@gmail.com"
-          class="group p-8 bg-container border border-accent/40 rounded-3xl hover:border-accent hover:bg-surface transition-all duration-300"
-        >
+        <div class="sm:col-span-2 lg:col-span-4 p-8 bg-container border border-accent/40 rounded-3xl hover:border-accent hover:bg-surface transition-all duration-300 flex flex-col lg:flex-row items-center gap-6 lg:text-left">
           <Icon
             name="mdi:briefcase-outline"
-            class="w-10 h-10 text-accent mb-4 mx-auto group-hover:scale-110 transition-transform"
+            class="w-10 h-10 text-accent shrink-0"
           />
-          <h3 class="text-white font-bold mb-1">Freelance &amp; Project Inquiries</h3>
-          <p class="text-gray-400 text-xs leading-relaxed px-1 mb-3">
-            Available for Android &amp; iOS mobile app development projects via AGcoding
-          </p>
-          <p class="text-accent text-xs font-mono tracking-wide">agcodinglp@gmail.com</p>
-        </a>
+          <div class="flex-1">
+            <h3 class="text-white font-bold mb-1">Freelance &amp; Project Inquiries</h3>
+            <p class="text-gray-400 text-xs leading-relaxed">
+              Available for Android &amp; iOS mobile app development projects via AGcoding
+            </p>
+          </div>
+          <div class="flex flex-wrap justify-center gap-3">
+            <a
+              href="mailto:agcodinglp@gmail.com"
+              class="inline-flex items-center gap-2 px-4 py-2.5 bg-background border border-line rounded-lg text-xs text-accent font-mono tracking-wide hover:border-accent/50 transition-colors"
+            >
+              <Icon name="mdi:email-outline" class="w-4 h-4" aria-hidden="true" />
+              agcodinglp@gmail.com
+            </a>
+            <a
+              href="https://agcoding.gr"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 px-4 py-2.5 bg-background border border-line rounded-lg text-xs text-accent font-mono tracking-wide hover:border-accent/50 transition-colors"
+            >
+              <Icon name="mdi:web" class="w-4 h-4" aria-hidden="true" />
+              agcoding.gr
+              <Icon name="mdi:open-in-new" class="w-3.5 h-3.5 opacity-60" aria-hidden="true" />
+            </a>
+          </div>
+        </div>
       </div>
 
       <!-- /* FOOTER */ -->

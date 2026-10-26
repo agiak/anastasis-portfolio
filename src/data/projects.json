@@ -50,14 +50,13 @@
   },
   {
     "title": "Cariboo — Car Management",
-    "description": "Personal app for managing your car: fuel, expenses and vehicle tracking, with an interactive statistics dashboard. Built with Jetpack Compose and AI-assisted workflows.",
+    "description": "Personal app for managing your car: fuel, expenses and vehicle tracking, with an interactive statistics dashboard. Built with Kotlin and Jetpack Compose.",
     "images": [
       "/images/cariboo-cover.webp"
     ],
     "tech": [
       "Kotlin",
       "Jetpack Compose",
-      "AI-assisted dev",
       "Play Store"
     ],
     "platforms": [
@@ -70,7 +69,7 @@
     "tagline": "Car management, simplified.",
     "overview": [
       "Cariboo is an offline-first Android app for everything that comes with owning a car: fuel, expenses, maintenance and paperwork, for one car or a whole household's.",
-      "I built it as a personal project and a playground for modern Android, with Jetpack Compose, Material 3, Clean Architecture and AI-assisted development. It's now live on Google Play, in English and Greek."
+      "I built it as a personal project and a playground for modern Android, with Jetpack Compose, Material 3 and Clean Architecture. It's now live on Google Play, in English and Greek."
     ],
     "features": [
       {
