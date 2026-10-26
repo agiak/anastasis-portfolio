@@ -7,8 +7,8 @@ import icon from 'astro-icon';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://agiak.github.io',
-  base: '/anastasis-portfolio',
+  // site: '#',
+  // base: '/',
   vite: {
     plugins: [tailwindcss()]
   },

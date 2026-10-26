@@ -1,6 +1,5 @@
 ---
 import { Icon } from 'astro-icon/components';
-import { withBase } from '../utils/base';
 import localData from '../data/home.json';
 
 //Data Definitions
@@ -50,9 +49,9 @@ const resumeIsLocalPdf = resumeUrl.startsWith('/') && resumeUrl.endsWith('.pdf')
   <div class="relative group mb-2 reveal-content" style="animation-delay: 100ms;">
     <div class="balloon-float w-20 h-20 md:w-24 md:h-24 rounded-full border-2 border-accent overflow-hidden shadow-[0_0_48px_rgba(61,220,132,0.28)]">
       <img 
-        src={withBase(photoUrl)}
+        src={photoUrl}
         alt={name}
-        onerror={`this.onerror=null;this.src='${withBase('/placeholder.jpeg')}';`}
+        onerror="this.onerror=null;this.src='/placeholder.jpeg';"
         class="w-full h-full object-cover scale-110" 
       />
     </div>
@@ -80,7 +79,7 @@ const resumeIsLocalPdf = resumeUrl.startsWith('/') && resumeUrl.endsWith('.pdf')
 
   <div class="mt-8 mb-4 reveal-content" style="animation-delay: 400ms;">
     <a 
-      href={withBase(resumeUrl)} 
+      href={resumeUrl} 
       {...(resumeIsLocalPdf ? { download: 'AnastasisGiakoumatosCV.pdf' } : {})}
       target={resumeIsLocalPdf ? undefined : '_blank'}
       rel={resumeIsLocalPdf ? undefined : 'noopener noreferrer'}
