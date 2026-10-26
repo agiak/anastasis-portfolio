@@ -16,7 +16,37 @@
     ],
     "link": "https://play.google.com/store/apps/details?id=net.honestli.androidapp",
     "category": "Freelance",
-    "playStoreBadge": true
+    "playStoreBadge": true,
+    "slug": "honestli",
+    "tagline": "Digital verification against misinformation.",
+    "overview": [
+      "Honestli is a freelance Android project built to fight misinformation. The app turns content into tamper-proof Digital Originals that can be verified later.",
+      "Each Digital Original carries C2PA provenance metadata and is anchored on a blockchain, so its origin can be checked and any alteration detected."
+    ],
+    "features": [
+      {
+        "icon": "mdi:shield-check-outline",
+        "title": "Digital Originals",
+        "description": "Create tamper-proof Digital Originals that can be verified at any time."
+      },
+      {
+        "icon": "mdi:file-certificate-outline",
+        "title": "C2PA provenance",
+        "description": "Content carries C2PA metadata describing where it came from and how it was made."
+      },
+      {
+        "icon": "mdi:link-lock",
+        "title": "Blockchain anchoring",
+        "description": "Originals are anchored on a blockchain, so any later change can be detected."
+      }
+    ],
+    "stack": [
+      "Kotlin",
+      "Android",
+      "C2PA",
+      "Blockchain"
+    ],
+    "screenshots": []
   },
   {
     "title": "Cariboo — Car Management",
@@ -35,6 +65,71 @@
     ],
     "link": "https://play.google.com/store/apps/details?id=com.agcoding.cartrackingapp",
     "category": "Personal Project",
-    "playStoreBadge": true
+    "playStoreBadge": true,
+    "slug": "cariboo",
+    "tagline": "Car management, simplified.",
+    "overview": [
+      "Cariboo is an offline-first Android app for everything that comes with owning a car: fuel, expenses, maintenance and paperwork, for one car or a whole household's.",
+      "I built it as a personal project and a playground for modern Android, with Jetpack Compose, Material 3, Clean Architecture and AI-assisted development. It's now live on Google Play, in English and Greek."
+    ],
+    "features": [
+      {
+        "icon": "mdi:gas-station",
+        "title": "Fuel tracking",
+        "description": "Log refills with cost, litres and odometer. Consumption (L/100km) and price per litre are calculated automatically, with optional GPS location."
+      },
+      {
+        "icon": "mdi:wrench-outline",
+        "title": "Expenses & services",
+        "description": "Track services, repairs, insurance, parking, tolls and your own categories, with full history and filters."
+      },
+      {
+        "icon": "mdi:bell-ring-outline",
+        "title": "Service reminders",
+        "description": "Date or mileage reminders that notify you a day before the due date or within 500 km of the target."
+      },
+      {
+        "icon": "mdi:chart-line",
+        "title": "Statistics & charts",
+        "description": "Interactive charts for cost, distance, consumption and refills, plus year-to-year and car-to-car comparisons."
+      },
+      {
+        "icon": "mdi:lightbulb-on-outline",
+        "title": "Forecasts & insights",
+        "description": "Forecasts fuel cost per km and efficiency with Holt's linear smoothing, and flags unusual expenses."
+      },
+      {
+        "icon": "mdi:microphone-outline",
+        "title": "Voice entry",
+        "description": "Add a refill just by saying it. Speech is turned into structured data with OpenAI GPT."
+      },
+      {
+        "icon": "mdi:car-multiple",
+        "title": "Multiple cars & documents",
+        "description": "Keep insurance, inspection (KTEO) and tyre details for every car, and attach PDFs or photos to each one."
+      },
+      {
+        "icon": "mdi:widgets-outline",
+        "title": "Widgets, backup & themes",
+        "description": "Home-screen widgets for quick entry, JSON and Excel/CSV import/export, and 30+ colour palettes."
+      }
+    ],
+    "stack": [
+      "Kotlin",
+      "Jetpack Compose",
+      "Material 3",
+      "Clean Architecture",
+      "MVVM",
+      "Hilt",
+      "Room",
+      "Coroutines & Flow",
+      "WorkManager",
+      "DataStore",
+      "Glance widgets",
+      "Firebase",
+      "Supabase",
+      "OpenAI API"
+    ],
+    "screenshots": []
   }
 ]

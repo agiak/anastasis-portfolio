@@ -1,11 +1,11 @@
 {
   "name": "Anastasis Giakoumatos",
   "photoUrl": "/android-avatar.svg",
-  "roleTitle": "Senior Android Developer",
+  "roleTitle": "Senior Mobile Engineer · Android",
   "tagline": "Building Android apps used by millions, in banking, payments and iGaming",
-  "intro": "Senior Android Developer based in Athens, Greece, with 7 years of shipping production apps in fintech, banking and iGaming. I lead modularization work, mentor developers and push for code quality in large cross-functional teams. My daily stack is Kotlin and Jetpack Compose on modern architectures, with AI-assisted tools used pragmatically to ship faster without cutting corners.",
-  "introHtml": "<span class='text-white font-bold'>Senior Android Developer</span> based in <span class='text-white font-bold'>Athens, Greece</span>, with <span class='text-white font-bold'>7 years</span> of shipping <span class='text-white font-bold'>production apps</span> in fintech, banking and iGaming. I lead <span class='text-white font-bold'>modularization</span> work, mentor developers and push for <span class='text-white font-bold'>code quality</span> in large cross-functional teams. My daily stack is <span class='text-white font-bold'>Kotlin</span> and <span class='text-white font-bold'>Jetpack Compose</span> on modern architectures, with <span class='text-white font-bold'>AI-assisted tools</span> used pragmatically to ship faster without cutting corners.",
-  "webpageTitle": "Anastasis Giakoumatos | Android Developer",
+  "intro": "Mobile Engineer specializing in Android, based in Athens, Greece. For the past 7 years I've built apps where reliability matters most: mobile banking, payments and iGaming, used by millions of people. I care about codebases that scale with the team, so I lead modularization efforts, mentor developers and keep quality high through testing and code reviews. I work in Kotlin and Jetpack Compose every day, and use AI tools where they genuinely speed things up, without lowering the bar.",
+  "introHtml": "<span class='text-white font-bold'>Mobile Engineer</span> specializing in <span class='text-white font-bold'>Android</span>, based in <span class='text-white font-bold'>Athens, Greece</span>. For the past <span class='text-white font-bold'>7 years</span> I've built apps where reliability matters most: <span class='text-white font-bold'>mobile banking</span>, <span class='text-white font-bold'>payments</span> and <span class='text-white font-bold'>iGaming</span>, used by millions of people. I care about codebases that scale with the team, so I lead <span class='text-white font-bold'>modularization</span> efforts, mentor developers and keep quality high through testing and code reviews. I work in <span class='text-white font-bold'>Kotlin</span> and <span class='text-white font-bold'>Jetpack Compose</span> every day, and use <span class='text-white font-bold'>AI tools</span> where they genuinely speed things up, without lowering the bar.",
+  "webpageTitle": "Anastasis Giakoumatos | Mobile Engineer (Android)",
   "resumeUrl": "/AnastasisGiakoumatosCV.pdf",
   "socials": [
     {
