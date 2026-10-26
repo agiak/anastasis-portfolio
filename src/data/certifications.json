@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Claude Code in Action",
+    "issuer": "Anthropic",
+    "icon": "simple-icons:anthropic",
+    "skills": ["Claude Code", "AI-assisted development"]
+  },
+  {
+    "title": "The Jetpack Compose Masterclass",
+    "issuer": "Philipp Lackner",
+    "icon": "mdi:android",
+    "skills": ["Android Jetpack"]
+  },
+  {
+    "title": "Leadership: Practical Leadership Skills",
+    "issuer": "Udemy",
+    "icon": "simple-icons:udemy",
+    "credentialId": "UC-4d5af8b5-d862-4a91-bcdc-77f1d116c60a",
+    "credentialUrl": "https://www.udemy.com/certificate/UC-4d5af8b5-d862-4a91-bcdc-77f1d116c60a/",
+    "skills": ["Leadership"]
+  }
+]

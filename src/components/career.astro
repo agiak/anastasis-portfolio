@@ -14,7 +14,7 @@ import careerData from '../data/career.json';
         // experience.mobile
       </p>
       <p class="text-gray font-body text-sm max-w-md pb-8">
-        A brief overview of my career
+        Seven years of Android across payments, banking and iGaming.
       </p>
     </div>
 
@@ -41,6 +41,17 @@ import careerData from '../data/career.json';
               <h3 class="text-xl font-heading font-bold text-white mt-1">{item.role}</h3>
               <p class="text-gray-400 text-sm mb-4">{item.company}</p>
               <p class="text-gray-500 font-body text-sm leading-relaxed mb-4">{item.description}</p>
+              {item.apps && (
+                <div class="flex flex-wrap gap-2 mb-4">
+                  {item.apps.map(app => (
+                    <a href={app.url} target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-background border border-line rounded-lg text-xs text-white/90 font-body hover:border-accent/50 hover:text-accent transition-colors">
+                      <Icon name="mdi:google-play" class="w-4 h-4 text-accent" aria-hidden="true" />
+                      {app.name}
+                      <Icon name="mdi:open-in-new" class="w-3.5 h-3.5 opacity-60" aria-hidden="true" />
+                    </a>
+                  ))}
+                </div>
+              )}
               <div class="flex flex-wrap gap-2">
                 {item.skills.map(skill => (
                   <span class="px-2 py-1 bg-surface border border-line rounded-full text-[10px] text-gray-300 font-mono">{skill}</span>
@@ -74,6 +85,17 @@ import careerData from '../data/career.json';
                   <h3 class="text-xl font-heading font-bold text-white mt-1">{item.role}</h3>
                   <p class="text-gray text-sm mb-4">{item.company}</p>
                   <p class="text-gray-400 font-body text-sm leading-relaxed mb-4">{item.description}</p>
+                  {item.apps && (
+                    <div class="flex flex-wrap gap-2 mb-4 justify-end">
+                      {item.apps.map(app => (
+                        <a href={app.url} target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-background border border-line rounded-lg text-xs text-white/90 font-body hover:border-accent/50 hover:text-accent transition-colors">
+                          <Icon name="mdi:google-play" class="w-4 h-4 text-accent" aria-hidden="true" />
+                          {app.name}
+                          <Icon name="mdi:open-in-new" class="w-3.5 h-3.5 opacity-60" aria-hidden="true" />
+                        </a>
+                      ))}
+                    </div>
+                  )}
                   <div class="flex flex-wrap gap-2 justify-end">
                     {item.skills.map(skill => (
                       <span class="px-3 py-1 bg-surface border border-line rounded-full text-[10px] text-gray-300 font-mono group-hover:border-accent/35">{skill}</span>
@@ -96,6 +118,17 @@ import careerData from '../data/career.json';
                   <h3 class="text-xl font-heading font-bold text-white mt-1">{item.role}</h3>
                   <p class="text-gray text-sm mb-4">{item.company}</p>
                   <p class="text-gray-400 font-body text-sm leading-relaxed mb-4">{item.description}</p>
+                  {item.apps && (
+                    <div class="flex flex-wrap gap-2 mb-4">
+                      {item.apps.map(app => (
+                        <a href={app.url} target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-background border border-line rounded-lg text-xs text-white/90 font-body hover:border-accent/50 hover:text-accent transition-colors">
+                          <Icon name="mdi:google-play" class="w-4 h-4 text-accent" aria-hidden="true" />
+                          {app.name}
+                          <Icon name="mdi:open-in-new" class="w-3.5 h-3.5 opacity-60" aria-hidden="true" />
+                        </a>
+                      ))}
+                    </div>
+                  )}
                   <div class="flex flex-wrap gap-2">
                     {item.skills.map(skill => (
                       <span class="px-3 py-1 bg-surface border border-line rounded-full text-[10px] text-gray-300 font-mono group-hover:border-accent/35">{skill}</span>

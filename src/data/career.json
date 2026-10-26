@@ -4,31 +4,44 @@
     "role": "Senior Android Developer",
     "period": "Nov 2025 - Present",
     "type": "B2B Contract",
-    "description": "Working on the Eurobank mobile banking application within a team of 35-40 Android developers. Led a large-scale modularization effort, migrating 1,500+ files and creating 10+ new modules. Established unit test coverage across previously untested modules.",
-    "skills": ["Android", "Kotlin", "Modularization", "Banking"]
+    "description": "Building Eurobank's mobile banking app as part of a 35–40 person Android team. Led a large-scale modularization, moving 1,500+ files into 10+ new modules, and brought unit test coverage to modules that previously had none.",
+    "skills": ["Android", "Kotlin", "Modularization", "Banking"],
+    "apps": [
+      { "name": "Eurobank", "url": "https://play.google.com/store/apps/details?id=com.EurobankEFG" }
+    ]
   },
   {
     "company": "BetssonGroup",
     "role": "Senior Android Developer",
     "period": "Jan 2024 - Nov 2025",
     "type": "Full time",
-    "description": "Native Android migration of Sportsbook product using Jetpack Compose and MVI architecture. Maintained sub-3% QA rejection rate, achieved 96% crash-free sessions over 6 months, and reviewed 50+ pull requests per quarter. Leveraged AI-assisted development tools (Cursor, GitHub Copilot, Claude, Gemini).",
-    "skills": ["Jetpack Compose", "MVI", "IGaming", "AI tooling"]
+    "description": "Migrated the Sportsbook product to native Android with Jetpack Compose and MVI. Kept the QA rejection rate under 3%, held 96% crash-free sessions over six months and reviewed 50+ pull requests per quarter, using AI-assisted tools (Cursor, GitHub Copilot, Claude, Gemini) to speed up delivery.",
+    "skills": ["Jetpack Compose", "MVI", "IGaming", "AI tooling"],
+    "apps": [
+      { "name": "Betsson GR", "url": "https://play.google.com/store/apps/details?id=obg.android.casino.store.betssongr" }
+    ]
   },
   {
     "company": "Viva.com",
     "role": "Android Engineer",
     "period": "Oct 2022 - Jan 2024",
     "type": "Full time",
-    "description": "Viva.com Terminal application serving 1M+ users across 10+ European countries. Implemented full tablet and landscape support across 35+ screens, enabling expansion to cash machines and vending machines. Developed Kiosk mode in Kotlin and led application rebranding.",
-    "skills": ["Kotlin", "POS", "Tablet UX", "Payments"]
+    "description": "Worked on the Viva.com Terminal app, used by 1M+ users in 10+ European countries. Added full tablet and landscape support across 35+ screens, which opened the app up to cash machines and vending machines. Built Kiosk mode in Kotlin and led the app's rebranding.",
+    "skills": ["Kotlin", "POS", "Tablet UX", "Payments"],
+    "apps": [
+      { "name": "Viva.com Terminal", "url": "https://play.google.com/store/apps/details?id=com.vivawallet.spoc.payapp" }
+    ]
   },
   {
     "company": "M-Stat",
     "role": "Android Engineer",
     "period": "Oct 2019 - Oct 2022",
     "type": "Full time",
-    "description": "Developed and maintained 15+ Android applications across insurance and loyalty domains. KRAFT Pro App — winner of Impact Bite Awards 2021. Piraeus Bank Yellow App — top banking app in Greece for 5 consecutive years. Tech lead for one year; sole Android developer on multiple projects with MVVM, Coroutines, Flow, and Room.",
-    "skills": ["MVVM", "Coroutines", "Room", "Leadership"]
+    "description": "Built and maintained 15+ Android apps in insurance and loyalty, including the KRAFT Pro App (Impact BITE Awards 2021 winner) and Piraeus Bank's Yellow app, top banking app in Greece for five consecutive years. Tech lead for a year and sole Android developer on several projects, using MVVM, Coroutines, Flow and Room.",
+    "skills": ["MVVM", "Coroutines", "Room", "Leadership"],
+    "apps": [
+      { "name": "Yellow", "url": "https://play.google.com/store/apps/details?id=gr.winbank.yellow" },
+      { "name": "KRAFT Pro", "url": "https://play.google.com/store/apps/details?id=gr.kraftpaints.proapp" }
+    ]
   }
 ]
