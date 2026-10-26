@@ -1,0 +1,64 @@
+---
+import { Icon } from 'astro-icon/components';
+import certificationsData from '../data/certifications.json';
+---
+
+<section id="certifications" class="py-4 md:py-20 px-4 md:px-0 overflow-hidden">
+  <div class="container mx-auto">
+    <div class="mb-16">
+      <h2 class="section-title">
+        <span class="section-title__prompt">/</span>
+        <span class="section-title__text">Certifications</span>
+      </h2>
+      <p class="font-mono text-[10px] text-accent/60 tracking-widest uppercase mb-2">
+        // learning.log
+      </p>
+      <p class="text-gray font-body text-sm max-w-md">
+        Courses I've completed to sharpen my Android, AI tooling and leadership skills.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {certificationsData.map((cert) => (
+        <div class="cert-card bg-container border border-line rounded-2xl p-6 flex flex-col gap-4 hover:border-accent/40 hover:bg-surface/80 transition-all group">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 shrink-0 rounded-xl bg-background border border-line flex items-center justify-center group-hover:border-accent/35 transition-colors">
+              <Icon name={cert.icon} class="w-6 h-6 text-white" aria-hidden="true" />
+            </div>
+            <div class="min-w-0">
+              <h3 class="text-lg font-heading font-bold text-white leading-snug">{cert.title}</h3>
+              <p class="text-gray text-sm mt-1">{cert.issuer}</p>
+            </div>
+          </div>
+
+          {cert.credentialId && (
+            <p class="font-mono text-[10px] text-gray-400 break-all">
+              Credential ID {cert.credentialId}
+            </p>
+          )}
+
+          <div class="flex flex-wrap gap-2">
+            {cert.skills.map((skill) => (
+              <span class="px-2.5 py-1 rounded-full text-[10px] text-gray border border-line bg-surface font-mono tracking-tight">
+                {skill}
+              </span>
+            ))}
+          </div>
+
+          {cert.credentialUrl && (
+            <a
+              href={cert.credentialUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="mt-auto self-start inline-flex items-center gap-1.5 px-3 py-1.5 bg-background border border-line rounded-lg text-xs text-white/90 font-body hover:border-accent/50 hover:text-accent transition-colors"
+            >
+              <Icon name="mdi:check-decagram" class="w-4 h-4 text-accent" aria-hidden="true" />
+              Show credential
+              <Icon name="mdi:open-in-new" class="w-3.5 h-3.5 opacity-60" aria-hidden="true" />
+            </a>
+          )}
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

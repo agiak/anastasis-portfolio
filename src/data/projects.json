@@ -1,21 +1,40 @@
 [
   {
     "title": "Honestli — Digital Verification",
-    "description": "Freelance project: combat misinformation with tamper-proof Digital Originals using C2PA metadata and blockchain anchoring. Available on Google Play.",
-    "images": ["/images/honestli-logo.png"],
-    "tech": ["Kotlin", "C2PA", "Blockchain", "Play Store"],
-    "platforms": ["google-play"],
+    "description": "Freelance Android app that fights misinformation with tamper-proof Digital Originals, verified through C2PA metadata and blockchain anchoring.",
+    "images": [
+      "/images/honestli-cover.webp"
+    ],
+    "tech": [
+      "Kotlin",
+      "C2PA",
+      "Blockchain",
+      "Play Store"
+    ],
+    "platforms": [
+      "google-play"
+    ],
     "link": "https://play.google.com/store/apps/details?id=net.honestli.androidapp",
     "category": "Freelance",
     "playStoreBadge": true
   },
   {
     "title": "Cariboo — Car Management",
-    "description": "Personal project (coming soon): car management for fuel, expenses, and vehicle tracking with an interactive statistics dashboard. Built with AI-assisted workflows.",
-    "images": ["/images/cariboo-logo.png"],
-    "tech": ["Kotlin", "Jetpack Compose", "AI-assisted dev"],
-    "platforms": ["android"],
-    "link": "https://github.com/agiak/CarTrackingApp",
-    "category": "Personal Project"
+    "description": "Personal app for managing your car: fuel, expenses and vehicle tracking, with an interactive statistics dashboard. Built with Jetpack Compose and AI-assisted workflows.",
+    "images": [
+      "/images/cariboo-cover.webp"
+    ],
+    "tech": [
+      "Kotlin",
+      "Jetpack Compose",
+      "AI-assisted dev",
+      "Play Store"
+    ],
+    "platforms": [
+      "google-play"
+    ],
+    "link": "https://play.google.com/store/apps/details?id=com.agcoding.cartrackingapp",
+    "category": "Personal Project",
+    "playStoreBadge": true
   }
 ]
