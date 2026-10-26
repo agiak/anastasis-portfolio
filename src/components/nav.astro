@@ -52,7 +52,7 @@ const navItems: NavItem[] = [
   >
     <div class="container mx-auto flex justify-center items-center p-3 reveal-content" style="animation-delay: 700ms;">
       <ul
-        class="flex w-full justify-between md:space-x-6 md:justify-center md:gap-12 gap-1"
+        class="flex w-full justify-between md:justify-center md:gap-12 gap-1"
       >
         {
           navItems.map((item) => (
@@ -214,6 +214,17 @@ const navItems: NavItem[] = [
   let lastScrollY = window.scrollY;
   let rafId: number | null = null;
 
+  // Width the links need, so the pill never shrinks narrower than its content
+  function getContentWidth() {
+    const items = nav?.querySelectorAll("li") ?? [];
+    const list = nav?.querySelector("ul");
+    if (!list || items.length === 0) return 0;
+    const gap = parseFloat(getComputedStyle(list).columnGap) || 0;
+    const linksWidth = Array.from(items).reduce((sum, li) => sum + li.getBoundingClientRect().width, 0);
+    const padding = 96; // container padding plus room for the scaled active link
+    return linksWidth + gap * (items.length - 1) + padding;
+  }
+
   function updateNav() {
     const currentScrollY = window.scrollY;
 
@@ -223,7 +234,7 @@ const navItems: NavItem[] = [
       const scrollProgress = Math.min(window.scrollY / maxScroll, 1);
       const easeProgress = 1 - Math.pow(1 - scrollProgress, 4);
 
-      const minWidth = 620;
+      const minWidth = Math.min(Math.max(620, getContentWidth()), window.innerWidth - 32);
       const maxWidth = window.innerWidth * 0.8;
       const currentWidth = maxWidth - (maxWidth - minWidth) * easeProgress;
 

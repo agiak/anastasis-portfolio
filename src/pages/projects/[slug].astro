@@ -1,0 +1,147 @@
+---
+import { Icon } from 'astro-icon/components';
+import Layout from '../../layouts/Layout.astro';
+import projectsData from '../../data/projects.json';
+
+export function getStaticPaths() {
+  return projectsData.map((project, index) => ({
+    params: { slug: project.slug },
+    props: { project, next: projectsData[(index + 1) % projectsData.length] },
+  }));
+}
+
+const { project, next } = Astro.props;
+const [cover] = project.images;
+const hasNext = next.slug !== project.slug;
+---
+
+<Layout title={`${project.title} | Anastasis Giakoumatos`}>
+  <header class="sticky top-0 z-20 border-b border-line bg-background/80 backdrop-blur-md">
+    <div class="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between gap-4">
+      <a href="/#projects" class="inline-flex items-center gap-2 text-sm text-gray hover:text-accent transition-colors">
+        <Icon name="mdi:arrow-left" class="w-4 h-4" aria-hidden="true" />
+        All projects
+      </a>
+      <span class="font-mono text-[10px] text-accent/60 tracking-widest uppercase">// apps.shipped / {project.slug}</span>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-4 pb-24">
+    <section class="pt-10 md:pt-16">
+      <div class="rounded-2xl overflow-hidden border border-line bg-[#0d1117] aspect-video">
+        <img src={cover} alt={`${project.title} cover`} class="w-full h-full object-cover" />
+      </div>
+
+      <div class="mt-10 flex flex-col md:flex-row md:items-end md:justify-between gap-6">
+        <div>
+          <span class="text-accent font-mono text-[10px] uppercase tracking-[0.2em] font-semibold">{project.category}</span>
+          <h1 class="text-4xl md:text-5xl font-heading font-bold text-white mt-2 tracking-tight">{project.title}</h1>
+          <p class="mt-3 text-gray font-body text-lg">{project.tagline}</p>
+        </div>
+
+        {project.playStoreBadge ? (
+          <a
+            href={project.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="self-start md:self-auto shrink-0 inline-flex items-center gap-3 rounded-lg bg-container px-4 py-3 border border-line hover:border-accent/40 transition-colors shadow-md"
+          >
+            <svg width="32" height="32" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M3 4.2c0-.45.48-.73.87-.5l11.4 6.55c.38.22.38.78 0 1L3.87 17.8c-.39.23-.87-.05-.87-.5V4.2z" fill="#00D1FF"/>
+              <path d="M16.8 12.05l-2.43-1.4 2.43-1.4 6.95 4c.39.22.39.78 0 1l-6.95 4-2.43-1.4 4.52-2.6-4.52-2.6z" fill="#00F076"/>
+              <path d="M14.37 10.65L3.87 4.1C3.48 3.87 3 4.15 3 4.6v.05l9.8 8.4 1.57-.4z" fill="#FFCE3A"/>
+              <path d="M3 23.4c0 .45.48.73.87.5l10.5-6.05-1.57-.4L3 4.65V23.4z" fill="#FF3364"/>
+            </svg>
+            <span class="text-left leading-tight">
+              <span class="block text-[10px] text-white/90 uppercase tracking-[0.06em]">Get it on</span>
+              <span class="block text-[15px] font-semibold text-white tracking-tight -mt-0.5">Google Play</span>
+            </span>
+          </a>
+        ) : (
+          <a
+            href={project.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="self-start md:self-auto shrink-0 inline-flex items-center gap-2 rounded-lg bg-container px-4 py-3 border border-line text-sm text-white hover:border-accent/40 hover:text-accent transition-colors"
+          >
+            View project
+            <Icon name="mdi:open-in-new" class="w-4 h-4" aria-hidden="true" />
+          </a>
+        )}
+      </div>
+    </section>
+
+    <section class="mt-16 grid md:grid-cols-[2fr_1fr] gap-10">
+      <div>
+        <h2 class="section-title">
+          <span class="section-title__prompt">/</span>
+          <span class="section-title__text">Overview</span>
+        </h2>
+        <div class="space-y-4 text-gray font-body leading-relaxed">
+          {project.overview.map((paragraph) => <p>{paragraph}</p>)}
+        </div>
+      </div>
+
+      <aside class="bg-container border border-line rounded-2xl p-6 self-start">
+        <h3 class="font-mono text-[10px] text-accent/60 tracking-widest uppercase mb-4">// built with</h3>
+        <div class="flex flex-wrap gap-2">
+          {project.stack.map((t) => (
+            <span class="px-2.5 py-1 rounded-full text-[11px] text-gray border border-line bg-surface font-mono tracking-tight">{t}</span>
+          ))}
+        </div>
+      </aside>
+    </section>
+
+    <section class="mt-16">
+      <h2 class="section-title">
+        <span class="section-title__prompt">/</span>
+        <span class="section-title__text">Features</span>
+      </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        {project.features.map((feature) => (
+          <div class="bg-container border border-line rounded-2xl p-5 flex gap-4 hover:border-accent/40 hover:bg-surface/80 transition-all group">
+            <div class="w-10 h-10 shrink-0 rounded-xl bg-background border border-line flex items-center justify-center group-hover:border-accent/35 transition-colors">
+              <Icon name={feature.icon} class="w-5 h-5 text-accent" aria-hidden="true" />
+            </div>
+            <div class="min-w-0">
+              <h3 class="font-heading font-bold text-white">{feature.title}</h3>
+              <p class="mt-1 text-sm text-gray font-body leading-relaxed">{feature.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    {project.screenshots.length > 0 && (
+      <section class="mt-16">
+        <h2 class="section-title">
+          <span class="section-title__prompt">/</span>
+          <span class="section-title__text">Screenshots</span>
+        </h2>
+        <div class="flex gap-4 overflow-x-auto snap-x snap-mandatory pb-4 -mx-4 px-4">
+          {project.screenshots.map((shot, index) => (
+            <img
+              src={shot}
+              alt={`${project.title} screenshot ${index + 1}`}
+              loading="lazy"
+              class="snap-start shrink-0 h-[480px] md:h-[560px] w-auto rounded-2xl border border-line bg-container"
+            />
+          ))}
+        </div>
+      </section>
+    )}
+
+    {hasNext && (
+      <a
+        href={`/projects/${next.slug}`}
+        class="mt-20 flex items-center justify-between gap-4 bg-container border border-line rounded-2xl p-6 hover:border-accent/40 hover:bg-surface/80 transition-all group"
+      >
+        <div>
+          <span class="font-mono text-[10px] text-accent/60 tracking-widest uppercase">Next project</span>
+          <p class="text-xl font-heading font-bold text-white mt-1">{next.title}</p>
+        </div>
+        <Icon name="mdi:arrow-right" class="w-6 h-6 text-gray group-hover:text-accent group-hover:translate-x-1 transition-all" aria-hidden="true" />
+      </a>
+    )}
+  </main>
+</Layout>
