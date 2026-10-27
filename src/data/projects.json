@@ -55,13 +55,14 @@
   },
   {
     "title": "Cariboo — Car Management",
-    "description": "My own car-management app, live on Google Play: fuel, expenses, service reminders and statistics for every car you own.",
+    "description": "My own car-management app, live on Google Play: fuel, expenses, service reminders and statistics for every car you own. Built with Claude Code as my coding agent.",
     "images": [
       "/images/cariboo-cover.webp"
     ],
     "tech": [
       "Kotlin",
       "Jetpack Compose",
+      "Claude Code",
       "Play Store"
     ],
     "platforms": [
@@ -74,7 +75,7 @@
     "tagline": "Car management, simplified.",
     "overview": [
       "Cariboo is an offline-first Android app for everything that comes with owning a car: fuel, expenses, maintenance and paperwork, for one car or a whole household's.",
-      "I built it end to end, from the first screen to the Play Store release, with Jetpack Compose, Material 3 and Clean Architecture. Releases are automated too: a single GitHub Actions run bumps the version, builds a signed APK and publishes the release. It's available in English and Greek."
+      "I built it end to end, from the first screen to the Play Store release, with Claude Code as my coding agent and Jetpack Compose, Material 3 and Clean Architecture underneath. Releases are automated too: a single GitHub Actions run bumps the version, builds a signed APK and publishes the release. It's available in English and Greek."
     ],
     "features": [
       {
@@ -133,7 +134,8 @@
       "Firebase",
       "Supabase",
       "OpenAI API",
-      "GitHub Actions"
+      "GitHub Actions",
+      "Claude Code"
     ],
     "screenshots": []
   }
