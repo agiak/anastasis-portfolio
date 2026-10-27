@@ -4,10 +4,18 @@
     "role": "Senior Android Developer",
     "period": "Nov 2025 - Present",
     "type": "B2B Contract",
-    "description": "Building Eurobank's mobile banking app as part of a 35–40 person Android team. Led a large-scale modularization, moving 1,500+ files into 10+ new modules, and brought unit test coverage to modules that previously had none.",
-    "skills": ["Android", "Kotlin", "Modularization", "Banking"],
+    "description": "I'm part of the <span class='text-white font-semibold'>35–40 person Android team</span> behind <span class='text-white font-semibold'>Eurobank</span>'s mobile banking app. I led a large modularization effort, moving <span class='text-white font-semibold'>1,500+ files into 10+ new modules</span>, and brought <span class='text-white font-semibold'>unit tests to modules that had none</span>, so the team can ship changes with more confidence.",
+    "skills": [
+      "Android",
+      "Kotlin",
+      "Modularization",
+      "Banking"
+    ],
     "apps": [
-      { "name": "Eurobank", "url": "https://play.google.com/store/apps/details?id=com.EurobankEFG" }
+      {
+        "name": "Eurobank",
+        "url": "https://play.google.com/store/apps/details?id=com.EurobankEFG"
+      }
     ]
   },
   {
@@ -15,10 +23,18 @@
     "role": "Senior Android Developer",
     "period": "Jan 2024 - Nov 2025",
     "type": "Full time",
-    "description": "Migrated the Sportsbook product to native Android with Jetpack Compose and MVI. Kept the QA rejection rate under 3%, held 96% crash-free sessions over six months and reviewed 50+ pull requests per quarter, using AI-assisted tools (Cursor, GitHub Copilot, Claude, Gemini) to speed up delivery.",
-    "skills": ["Jetpack Compose", "MVI", "IGaming", "AI tooling"],
+    "description": "I helped move the <span class='text-white font-semibold'>Sportsbook</span> from WebView screens to <span class='text-white font-semibold'>native Android</span> with Jetpack Compose and MVI. I kept the <span class='text-white font-semibold'>QA rejection rate under 3%</span>, held the app at <span class='text-white font-semibold'>96% crash-free sessions</span> and reviewed <span class='text-white font-semibold'>50+ pull requests a quarter</span>. This is also where <span class='text-white font-semibold'>AI tools became part of my daily workflow</span> (Cursor, Copilot, Claude, Gemini), helping me ship features faster without lowering quality.",
+    "skills": [
+      "Jetpack Compose",
+      "MVI",
+      "IGaming",
+      "AI tooling"
+    ],
     "apps": [
-      { "name": "Betsson GR", "url": "https://play.google.com/store/apps/details?id=obg.android.casino.store.betssongr" }
+      {
+        "name": "Betsson GR",
+        "url": "https://play.google.com/store/apps/details?id=obg.android.casino.store.betssongr"
+      }
     ]
   },
   {
@@ -26,10 +42,18 @@
     "role": "Android Engineer",
     "period": "Oct 2022 - Jan 2024",
     "type": "Full time",
-    "description": "Worked on the Viva.com Terminal app, used by 1M+ users in 10+ European countries. Added full tablet and landscape support across 35+ screens, which opened the app up to cash machines and vending machines. Built Kiosk mode in Kotlin and led the app's rebranding.",
-    "skills": ["Kotlin", "POS", "Tablet UX", "Payments"],
+    "description": "I worked on the <span class='text-white font-semibold'>Viva.com Terminal</span> app, used by <span class='text-white font-semibold'>1M+ people in 10+ European countries</span>. I added <span class='text-white font-semibold'>tablet and landscape support across 35+ screens</span>, which let the app run on new devices like cash machines and vending machines. I also built its <span class='text-white font-semibold'>Kiosk mode</span> and led the <span class='text-white font-semibold'>app rebranding</span>.",
+    "skills": [
+      "Kotlin",
+      "POS",
+      "Tablet UX",
+      "Payments"
+    ],
     "apps": [
-      { "name": "Viva.com Terminal", "url": "https://play.google.com/store/apps/details?id=com.vivawallet.spoc.payapp" }
+      {
+        "name": "Viva.com Terminal",
+        "url": "https://play.google.com/store/apps/details?id=com.vivawallet.spoc.payapp"
+      }
     ]
   },
   {
@@ -37,11 +61,22 @@
     "role": "Android Engineer",
     "period": "Oct 2019 - Oct 2022",
     "type": "Full time",
-    "description": "Built and maintained 15+ Android apps in insurance and loyalty, including the KRAFT Pro App (Impact BITE Awards 2021 winner) and Piraeus Bank's Yellow app, top banking app in Greece for five consecutive years. Tech lead for a year and sole Android developer on several projects, using MVVM, Coroutines, Flow and Room.",
-    "skills": ["MVVM", "Coroutines", "Room", "Leadership"],
+    "description": "Where I grew into a <span class='text-white font-semibold'>tech lead</span>. I built and maintained <span class='text-white font-semibold'>15+ Android apps</span> for insurance and loyalty clients, often as the <span class='text-white font-semibold'>sole Android developer</span>, including the award-winning <span class='text-white font-semibold'>KRAFT Pro App</span> (Impact BITE Awards 2021) and Piraeus Bank's <span class='text-white font-semibold'>Yellow</span>, a top banking app in Greece <span class='text-white font-semibold'>five years in a row</span>. As tech lead I owned estimations, worked directly with clients and mentored junior developers.",
+    "skills": [
+      "MVVM",
+      "Coroutines",
+      "Room",
+      "Leadership"
+    ],
     "apps": [
-      { "name": "Yellow", "url": "https://play.google.com/store/apps/details?id=gr.winbank.yellow" },
-      { "name": "KRAFT Pro", "url": "https://play.google.com/store/apps/details?id=gr.kraftpaints.proapp" }
+      {
+        "name": "Yellow",
+        "url": "https://play.google.com/store/apps/details?id=gr.winbank.yellow"
+      },
+      {
+        "name": "KRAFT Pro",
+        "url": "https://play.google.com/store/apps/details?id=gr.kraftpaints.proapp"
+      }
     ]
   }
 ]

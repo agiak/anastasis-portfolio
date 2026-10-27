@@ -14,7 +14,7 @@ import careerData from '../data/career.json';
         // experience.mobile
       </p>
       <p class="text-gray font-body text-sm max-w-md pb-8">
-        Seven years of Android across payments, banking and iGaming.
+        7 years shipping Android apps in banking, payments and iGaming.
       </p>
     </div>
 
@@ -40,7 +40,7 @@ import careerData from '../data/career.json';
               <span class="text-accent font-mono text-xs tracking-widest uppercase">{item.period}</span>
               <h3 class="text-xl font-heading font-bold text-white mt-1">{item.role}</h3>
               <p class="text-gray-400 text-sm mb-4">{item.company}</p>
-              <p class="text-gray-500 font-body text-sm leading-relaxed mb-4">{item.description}</p>
+              <p class="text-gray-500 font-body text-sm leading-relaxed mb-4" set:html={item.description} />
               {item.apps && (
                 <div class="flex flex-wrap gap-2 mb-4">
                   {item.apps.map(app => (
@@ -84,7 +84,7 @@ import careerData from '../data/career.json';
                   <span class="text-accent font-mono text-xs tracking-widest uppercase">{item.period}</span>
                   <h3 class="text-xl font-heading font-bold text-white mt-1">{item.role}</h3>
                   <p class="text-gray text-sm mb-4">{item.company}</p>
-                  <p class="text-gray-400 font-body text-sm leading-relaxed mb-4">{item.description}</p>
+                  <p class="text-gray-400 font-body text-sm leading-relaxed mb-4" set:html={item.description} />
                   {item.apps && (
                     <div class="flex flex-wrap gap-2 mb-4 justify-end">
                       {item.apps.map(app => (
@@ -117,7 +117,7 @@ import careerData from '../data/career.json';
                   <span class="text-accent font-mono text-xs tracking-widest uppercase">{item.period}</span>
                   <h3 class="text-xl font-heading font-bold text-white mt-1">{item.role}</h3>
                   <p class="text-gray text-sm mb-4">{item.company}</p>
-                  <p class="text-gray-400 font-body text-sm leading-relaxed mb-4">{item.description}</p>
+                  <p class="text-gray-400 font-body text-sm leading-relaxed mb-4" set:html={item.description} />
                   {item.apps && (
                     <div class="flex flex-wrap gap-2 mb-4">
                       {item.apps.map(app => (
