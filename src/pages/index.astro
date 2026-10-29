@@ -32,9 +32,28 @@ if (isApiLive && BASE_URL) {
 }
 
 const { webpageTitle } = data;
+
+const description =
+  'Anastasis Giakoumatos is a Senior Mobile Engineer in Athens, Greece, specializing in Android. ' +
+  '7 years building banking, payments and iGaming apps used by millions, shipped faster with AI.';
+
+const person = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: 'Anastasis Giakoumatos',
+  jobTitle: 'Senior Mobile Engineer',
+  description,
+  url: Astro.site?.href,
+  image: new URL('/og-image.jpg', Astro.site).href,
+  email: 'mailto:anastas.giakoumatos@gmail.com',
+  address: { '@type': 'PostalAddress', addressLocality: 'Athens', addressCountry: 'GR' },
+  alumniOf: { '@type': 'CollegeOrUniversity', name: 'Athens University of Economics and Business' },
+  knowsAbout: ['Android', 'Kotlin', 'Jetpack Compose', 'Mobile Engineering', 'AI-assisted development', 'Claude Code'],
+  sameAs: ['https://github.com/agiak', 'https://www.linkedin.com/in/anastasis-giakoumatos', 'https://agcoding.gr'],
+};
 ---
 
-<Layout title={webpageTitle}>
+<Layout title={webpageTitle} description={description} structuredData={person}>
   	<Nav />
 	<Home />
 	<Career />

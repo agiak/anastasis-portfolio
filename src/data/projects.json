@@ -3,7 +3,7 @@
     "title": "Honestli — Digital Verification",
     "description": "A freelance Android app that fights misinformation by turning photos and videos into tamper-proof Digital Originals, backed by C2PA metadata and blockchain anchoring.",
     "images": [
-      "/images/honestli-cover.webp"
+      "/images/honestli-cover.jpg"
     ],
     "tech": [
       "Kotlin",
@@ -57,7 +57,7 @@
     "title": "Cariboo — Car Management",
     "description": "My own car-management app, live on Google Play: fuel, expenses, service reminders and statistics for every car you own. Built with Claude Code as my coding agent.",
     "images": [
-      "/images/cariboo-cover.webp"
+      "/images/cariboo-cover.jpg"
     ],
     "tech": [
       "Kotlin",

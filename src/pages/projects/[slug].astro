@@ -15,7 +15,7 @@ const [cover] = project.images;
 const hasNext = next.slug !== project.slug;
 ---
 
-<Layout title={`${project.title} | Anastasis Giakoumatos`}>
+<Layout title={`${project.title} | Anastasis Giakoumatos`} description={project.description} image={cover}>
   <header class="sticky top-0 z-20 border-b border-line bg-background/80 backdrop-blur-md">
     <div class="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between gap-4">
       <a href="/#projects" class="inline-flex items-center gap-2 text-sm text-gray hover:text-accent transition-colors">
