@@ -2,12 +2,53 @@
   {
     "title": "Claude Code in Action",
     "issuer": "Anthropic",
+    "issued": "Oct 2026",
     "icon": "simple-icons:anthropic",
     "skills": [
       "Claude Code",
       "AI-assisted development"
     ],
+    "credentialId": "d3fcb0811b21ca1f6712a9056fe6401d",
     "credentialUrl": "https://www.linkedin.com/learning/certificates/832a5fcdeb3a48f6b78f0c65a9f2c94ccc848e4828999c848f1d957edd40a257?u=78611978"
+  },
+  {
+    "title": "Introduction to Model Context Protocol",
+    "issuer": "Anthropic",
+    "issued": "Nov 2026",
+    "icon": "simple-icons:anthropic",
+    "skills": [
+      "AI Agents",
+      "Model Context Protocol (MCP)"
+    ]
+  },
+  {
+    "title": "Claude 101",
+    "issuer": "Anthropic",
+    "issued": "Oct 2026",
+    "icon": "simple-icons:anthropic",
+    "skills": [
+      "Claude"
+    ],
+    "credentialId": "4e76b8eadfa4787165eaa7819aa69832"
+  },
+  {
+    "title": "Claude Design for Business: Create Slides, Graphics, and More with AI",
+    "issuer": "LinkedIn Learning",
+    "icon": "simple-icons:linkedin",
+    "skills": [
+      "Claude",
+      "Generative AI"
+    ]
+  },
+  {
+    "title": "Building an App for All Apple Platforms",
+    "issuer": "LinkedIn Learning",
+    "issued": "Nov 2026",
+    "icon": "simple-icons:linkedin",
+    "skills": [
+      "SwiftUI",
+      "Apple Developer"
+    ]
   },
   {
     "title": "The Jetpack Compose Masterclass",

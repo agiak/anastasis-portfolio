@@ -14,7 +14,7 @@ import certificationsData from '../data/certifications.json';
         // learning.log
       </p>
       <p class="text-gray font-body text-sm max-w-md">
-        Courses that keep my Android, AI and leadership skills sharp.
+        Courses that keep my mobile, AI and leadership skills sharp.
       </p>
     </div>
 
@@ -27,7 +27,7 @@ import certificationsData from '../data/certifications.json';
             </div>
             <div class="min-w-0">
               <h3 class="text-lg font-heading font-bold text-white leading-snug">{cert.title}</h3>
-              <p class="text-gray text-sm mt-1">{cert.issuer}</p>
+              <p class="text-gray text-sm mt-1">{cert.issuer}{cert.issued && <span class="text-gray-400"> · {cert.issued}</span>}</p>
             </div>
           </div>
 
