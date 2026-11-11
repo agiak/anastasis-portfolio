@@ -1,5 +1,6 @@
 [
   {
+    "category": "Anthropic",
     "title": "Claude Code in Action",
     "issuer": "Anthropic",
     "issued": "Oct 2026",
@@ -12,6 +13,30 @@
     "credentialUrl": "https://www.linkedin.com/learning/certificates/832a5fcdeb3a48f6b78f0c65a9f2c94ccc848e4828999c848f1d957edd40a257?u=78611978"
   },
   {
+    "category": "Anthropic",
+    "title": "Claude 101",
+    "issuer": "Anthropic",
+    "issued": "Oct 2026",
+    "icon": "simple-icons:anthropic",
+    "skills": [
+      "Claude"
+    ],
+    "credentialId": "4e76b8eadfa4787165eaa7819aa69832",
+    "credentialUrl": "https://academy.claude.com/verify/4e76b8eadfa4787165eaa7819aa69832"
+  },
+  {
+    "category": "Anthropic",
+    "title": "Claude Platform 101",
+    "issuer": "Anthropic",
+    "icon": "simple-icons:anthropic",
+    "skills": [
+      "Claude Developer Platform"
+    ],
+    "credentialId": "a0a3954bba319dafe39fd0d10e51f38e",
+    "credentialUrl": "https://academy.claude.com/verify/a0a3954bba319dafe39fd0d10e51f38e"
+  },
+  {
+    "category": "Anthropic",
     "title": "Introduction to Model Context Protocol",
     "issuer": "Anthropic",
     "issued": "Nov 2026",
@@ -22,35 +47,75 @@
     ]
   },
   {
-    "title": "Claude 101",
+    "category": "Anthropic",
+    "title": "Model Context Protocol: Advanced Topics",
     "issuer": "Anthropic",
-    "issued": "Oct 2026",
     "icon": "simple-icons:anthropic",
     "skills": [
-      "Claude"
+      "Model Context Protocol (MCP)"
     ],
-    "credentialId": "4e76b8eadfa4787165eaa7819aa69832"
+    "credentialId": "9ee897b08f2bbb4d682d3650d6d66189",
+    "credentialUrl": "https://academy.claude.com/verify/9ee897b08f2bbb4d682d3650d6d66189"
   },
   {
+    "category": "Anthropic",
+    "title": "AI Fluency: Framework and Foundations",
+    "issuer": "Anthropic · LinkedIn Learning",
+    "issued": "Nov 2026",
+    "icon": "simple-icons:anthropic",
+    "skills": [
+      "AI Fluency"
+    ],
+    "credentialUrl": "https://www.linkedin.com/learning/certificates/142b34cb73aaab40ba69cc9a465ff466c5022c29e5270da19b2f1c3940c5aedd/"
+  },
+  {
+    "category": "AI & Agents",
+    "title": "Agentic AI: Build Your First Agentic AI System",
+    "issuer": "LinkedIn Learning",
+    "issued": "Nov 2026",
+    "icon": "simple-icons:linkedin",
+    "skills": [
+      "Agentic AI",
+      "AI Agents"
+    ],
+    "credentialUrl": "https://www.linkedin.com/learning/certificates/bc627130da277e21da6aebbab79c7e2284d00b2c475e7c9b7ad3cfa7486d052c/"
+  },
+  {
+    "category": "AI & Agents",
+    "title": "AI Agents at Work: Build Day-to-Day Workflows for Productivity",
+    "issuer": "LinkedIn Learning",
+    "issued": "Nov 2026",
+    "icon": "simple-icons:linkedin",
+    "skills": [
+      "AI Agents",
+      "Automation"
+    ],
+    "credentialUrl": "https://www.linkedin.com/learning/certificates/fb8da6c0e9ff73395e14467115969eb467876b57cdd872023047fb5e365f87c6/"
+  },
+  {
+    "category": "AI & Agents",
+    "title": "OpenAI API Foundations: Build Your First AI Application",
+    "issuer": "LinkedIn Learning",
+    "issued": "Nov 2026",
+    "icon": "simple-icons:linkedin",
+    "skills": [
+      "OpenAI API"
+    ],
+    "credentialUrl": "https://www.linkedin.com/learning/certificates/9610fef17ed3f55d37584a8fd467cf609142f9dfed850e64c8c51da69c005e5f/"
+  },
+  {
+    "category": "AI & Agents",
     "title": "Claude Design for Business: Create Slides, Graphics, and More with AI",
     "issuer": "LinkedIn Learning",
     "icon": "simple-icons:linkedin",
     "skills": [
       "Claude",
       "Generative AI"
-    ]
+    ],
+    "credentialUrl": "https://www.linkedin.com/learning/certificates/77ee58557b222c4237acd083d34706765aca75a6453ba477cfe72d550f038f62/"
   },
   {
-    "title": "Building an App for All Apple Platforms",
-    "issuer": "LinkedIn Learning",
-    "issued": "Nov 2026",
-    "icon": "simple-icons:linkedin",
-    "skills": [
-      "SwiftUI",
-      "Apple Developer"
-    ]
-  },
-  {
+    "category": "Mobile & Programming",
     "title": "The Jetpack Compose Masterclass",
     "issuer": "Philipp Lackner",
     "icon": "mdi:android",
@@ -59,6 +124,40 @@
     ]
   },
   {
+    "category": "Mobile & Programming",
+    "title": "Kotlin Multiplatform Libraries",
+    "issuer": "LinkedIn Learning",
+    "issued": "Nov 2026",
+    "icon": "simple-icons:linkedin",
+    "skills": [
+      "Kotlin Multiplatform"
+    ],
+    "credentialUrl": "https://www.linkedin.com/learning/certificates/98cb79b901e4fc32f4340288fbd1460df1022ca677a25648f4ba20b9062b1fce/"
+  },
+  {
+    "category": "Mobile & Programming",
+    "title": "Building an App for All Apple Platforms",
+    "issuer": "LinkedIn Learning",
+    "issued": "Nov 2026",
+    "icon": "simple-icons:linkedin",
+    "skills": [
+      "SwiftUI",
+      "Apple Developer"
+    ],
+    "credentialUrl": "https://www.linkedin.com/learning/certificates/72c58b8b2303b796624f918b5c6b82c0bbde7c07b19611fcdb9dc87c01725d7e/"
+  },
+  {
+    "category": "Mobile & Programming",
+    "title": "Python Essentials",
+    "issuer": "LinkedIn Learning",
+    "icon": "simple-icons:linkedin",
+    "skills": [
+      "Python"
+    ],
+    "credentialUrl": "https://www.linkedin.com/learning/certificates/7c7740b7265ea703233c4e1ca18a1b21b763929c541d2bcd68217b69a8aeeaea/"
+  },
+  {
+    "category": "Leadership",
     "title": "Leadership: Practical Leadership Skills",
     "issuer": "Udemy",
     "icon": "simple-icons:udemy",
