@@ -1,0 +1,36 @@
+# Anastasis Giakoumatos
+
+> Senior Mobile Engineer specializing in Android, based in Athens, Greece. 7 years building banking, payments and iGaming apps used by millions of people, and using AI (Claude Code, coding agents, automation) to ship mobile apps faster without lowering quality.
+
+Anastasis works daily with Kotlin and Jetpack Compose on modern Android architectures (MVI, MVVM, Clean Architecture, multi-module). He has led large-scale modularization efforts, mentored developers, and raised code quality through testing and code reviews in large cross-functional teams. He also builds AI-powered features into his own apps and is available for freelance mobile app development through AGcoding.
+
+## Experience
+
+- Cognity (B2B contract), Senior Android Developer, Nov 2025 - present: Eurobank's mobile banking app in a 35-40 person Android team. Led a modularization moving 1,500+ files into 10+ new modules and introduced unit tests to previously untested modules.
+- BetssonGroup, Senior Android Developer, Jan 2024 - Nov 2025: moved the Sportsbook from WebView screens to native Android with Jetpack Compose and MVI. Kept the QA rejection rate under 3%, held 96% crash-free sessions and reviewed 50+ pull requests per quarter, using AI tools (Cursor, GitHub Copilot, Claude, Gemini) daily.
+- Viva.com, Android Engineer, Oct 2022 - Jan 2024: Viva.com Terminal app, used by 1M+ people in 10+ European countries. Added tablet and landscape support across 35+ screens, built Kiosk mode and led the app rebranding.
+- M-Stat, Android Engineer, Oct 2019 - Oct 2022: built and maintained 15+ Android apps for insurance and loyalty clients, including the KRAFT Pro App (Impact BITE Awards 2021) and Piraeus Bank's Yellow app. Tech lead for one year.
+
+## Projects
+
+- [Cariboo](https://anastasis-portfolio.vercel.app/projects/cariboo/): personal car-management app on Google Play (fuel, expenses, service reminders, statistics). Built end to end with Claude Code as a coding agent, Jetpack Compose and Clean Architecture; GPT-powered voice entry and an automated GitHub Actions release pipeline.
+- [Honestli](https://anastasis-portfolio.vercel.app/projects/honestli/): freelance Android app that fights misinformation with tamper-proof Digital Originals, using C2PA metadata and blockchain anchoring.
+
+## Skills
+
+- Languages: Kotlin, Java
+- UI: Jetpack Compose, XML layouts
+- Architecture: MVI, MVVM, Clean Architecture, multi-module
+- Async: Coroutines, Flow, RxJava
+- Testing: JUnit, Mockito, Turbine
+- AI tools: Claude Code, Cursor, GitHub Copilot, Claude, Google Gemini
+- Certifications: Anthropic (Claude Code in Action, Model Context Protocol, AI Fluency), Agentic AI, Kotlin Multiplatform, Jetpack Compose
+
+## Links
+
+- [Website](https://anastasis-portfolio.vercel.app/): portfolio with career, projects, tech stack and certifications
+- [CV (PDF)](https://anastasis-portfolio.vercel.app/AnastasisGiakoumatosCV.pdf)
+- [LinkedIn](https://www.linkedin.com/in/anastasis-giakoumatos)
+- [GitHub](https://github.com/agiak)
+- [AGcoding](https://agcoding.gr): freelance mobile app development
+- Email: anastas.giakoumatos@gmail.com
