@@ -23,12 +23,12 @@
     "role": "Senior Android Developer",
     "period": "Jan 2024 - Nov 2025",
     "type": "Full time",
-    "description": "I helped move the <span class='text-white font-semibold'>Sportsbook</span> from WebView screens to <span class='text-white font-semibold'>native Android</span> with Jetpack Compose and MVI. I kept the <span class='text-white font-semibold'>QA rejection rate under 3%</span>, held the app at <span class='text-white font-semibold'>96% crash-free sessions</span> and reviewed <span class='text-white font-semibold'>50+ pull requests a quarter</span>. This is also where <span class='text-white font-semibold'>AI tools became part of my daily workflow</span> (Cursor, Copilot, Claude, Gemini), helping me ship features faster without lowering quality.",
+    "description": "I helped move the <span class='text-white font-semibold'>Sportsbook</span> from WebView screens to <span class='text-white font-semibold'>native Android</span> with Jetpack Compose and MVI. I kept the <span class='text-white font-semibold'>QA rejection rate under 3%</span>, held the app at <span class='text-white font-semibold'>96% crash-free sessions</span> and reviewed <span class='text-white font-semibold'>50+ pull requests a quarter</span>. This is also where <span class='text-white font-semibold'>AI-assisted and agentic development</span> became part of my daily workflow (Cursor, Copilot, Claude, Gemini), helping me ship features faster without lowering quality.",
     "skills": [
       "Jetpack Compose",
       "MVI",
       "IGaming",
-      "AI tooling"
+      "Agentic development"
     ],
     "apps": [
       {

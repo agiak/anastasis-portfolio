@@ -55,7 +55,7 @@
   },
   {
     "title": "Cariboo — Car Management",
-    "description": "My own car-management app, live on Google Play: fuel, expenses, service reminders and statistics for every car you own. Built with Claude Code as my coding agent.",
+    "description": "My own car-management app, live on Google Play: fuel, expenses, service reminders and statistics for every car you own. Built with agentic development, Claude Code and a Supabase backend.",
     "images": [
       "/images/cariboo-cover.jpg"
     ],
@@ -63,7 +63,8 @@
       "Kotlin",
       "Jetpack Compose",
       "Claude Code",
-      "Play Store"
+      "Supabase",
+      "GitHub Actions"
     ],
     "platforms": [
       "google-play"
@@ -75,7 +76,7 @@
     "tagline": "Car management, simplified.",
     "overview": [
       "Cariboo is an offline-first Android app for everything that comes with owning a car: fuel, expenses, maintenance and paperwork, for one car or a whole household's.",
-      "I built it end to end, from the first screen to the Play Store release, with Claude Code as my coding agent and Jetpack Compose, Material 3 and Clean Architecture underneath. Releases are automated too: a single GitHub Actions run bumps the version, builds a signed APK and publishes the release. It's available in English and Greek."
+      "I built it end to end, from the first screen to the Play Store release, through agentic development: Claude Code works as my coding agent on top of Jetpack Compose, Material 3 and Clean Architecture. Accounts and cloud sync run on Supabase, and releases are automated with a GitHub Actions CI/CD pipeline that bumps the version, builds a signed APK and publishes the release. It's available in English and Greek."
     ],
     "features": [
       {
@@ -112,6 +113,11 @@
         "icon": "mdi:car-multiple",
         "title": "Multiple cars & documents",
         "description": "Keep insurance, inspection (KTEO) and tyre details for every car, and attach PDFs or photos to each one."
+      },
+      {
+        "icon": "mdi:cloud-sync-outline",
+        "title": "Cloud account & sync",
+        "description": "Sign in to back up and sync your data, powered by Supabase Auth and Edge Functions for sign-up, password reset and push notifications."
       },
       {
         "icon": "mdi:widgets-outline",
