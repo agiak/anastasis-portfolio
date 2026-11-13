@@ -1,6 +1,7 @@
 ---
 import { Icon } from 'astro-icon/components';
 import certificationsData from '../data/certifications.json';
+import education from '../data/education.json';
 
 // Keep the categories in the order they first appear in the data
 const groups = [...new Set(certificationsData.map((cert) => cert.category))].map((category) => ({
@@ -14,20 +15,45 @@ const groups = [...new Set(certificationsData.map((cert) => cert.category))].map
     <div class="mb-16">
       <h2 class="section-title">
         <span class="section-title__prompt">/</span>
-        <span class="section-title__text">Certifications</span>
+        <span class="section-title__text">Education &amp; Certifications</span>
       </h2>
       <p class="font-mono text-[10px] text-accent/60 tracking-widest uppercase mb-2">
         // learning.log
       </p>
       <p class="text-gray font-body text-sm max-w-md">
-        Courses that keep my mobile, AI and leadership skills sharp.
+        Where I studied, and the courses that keep my mobile, AI and leadership skills sharp.
       </p>
     </div>
 
+    <div class="mb-16">
+      <h3 class="text-xl font-heading font-bold text-white mb-4">Education</h3>
+      <div class="cert-card bg-container border border-line rounded-2xl p-6 flex flex-col md:flex-row md:items-center gap-6 hover:border-accent/40 hover:bg-surface/80 transition-all group">
+        <div class="flex items-start gap-4 flex-1">
+          <div class="w-12 h-12 shrink-0 rounded-xl bg-background border border-line flex items-center justify-center group-hover:border-accent/35 transition-colors">
+            <Icon name="mdi:school-outline" class="w-6 h-6 text-white" aria-hidden="true" />
+          </div>
+          <div class="min-w-0">
+            <h4 class="text-lg font-heading font-bold text-white leading-snug">{education.degree}</h4>
+            <p class="text-gray text-sm mt-1">{education.school}</p>
+            <p class="font-mono text-[11px] text-gray-400 mt-1">{education.period} · {education.location}</p>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-2 md:justify-end">
+          {education.languages.map((lang) => (
+            <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[11px] text-gray border border-line bg-surface font-mono">
+              <Icon name="mdi:translate" class="w-3.5 h-3.5 text-accent" aria-hidden="true" />
+              {lang.name} · {lang.level}
+            </span>
+          ))}
+        </div>
+      </div>
+    </div>
+
+    <h3 class="text-xl font-heading font-bold text-white mb-6">Certifications</h3>
     <div class="space-y-12">
     {groups.map(({ category, certs }) => (
     <div>
-    <h3 class="font-mono text-xs text-accent tracking-widest uppercase mb-4">{category}</h3>
+    <h4 class="font-mono text-xs text-accent tracking-widest uppercase mb-4">{category}</h4>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       {certs.map((cert) => (
         <div class="cert-card bg-container border border-line rounded-2xl p-6 flex flex-col gap-4 hover:border-accent/40 hover:bg-surface/80 transition-all group">
@@ -36,7 +62,7 @@ const groups = [...new Set(certificationsData.map((cert) => cert.category))].map
               <Icon name={cert.icon} class="w-6 h-6 text-white" aria-hidden="true" />
             </div>
             <div class="min-w-0">
-              <h3 class="text-lg font-heading font-bold text-white leading-snug">{cert.title}</h3>
+              <h5 class="text-lg font-heading font-bold text-white leading-snug">{cert.title}</h5>
               <p class="text-gray text-sm mt-1">{cert.issuer}</p>
             </div>
           </div>

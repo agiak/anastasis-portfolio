@@ -27,6 +27,11 @@ Anastasis works daily with Kotlin and Jetpack Compose on modern Android architec
 - Cloud and CI/CD: GitHub Actions, Supabase, Vercel, Firebase, Azure
 - Certifications: Anthropic (Claude Code in Action, Model Context Protocol, AI Fluency), Agentic AI, Kotlin Multiplatform, Jetpack Compose
 
+## Education
+
+- BSc Computer Science, Athens University of Economics and Business, 2015 - 2020
+- Languages: Greek (native), English (C2, Michigan ECPE)
+
 ## Links
 
 - [Website](https://anastasis-portfolio.vercel.app/): portfolio with career, projects, tech stack and certifications

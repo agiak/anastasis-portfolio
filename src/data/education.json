@@ -1,0 +1,10 @@
+{
+  "degree": "BSc Computer Science",
+  "school": "Athens University of Economics and Business",
+  "period": "2015 - 2020",
+  "location": "Athens, Greece",
+  "languages": [
+    { "name": "Greek", "level": "Native" },
+    { "name": "English", "level": "C2 · Michigan ECPE" }
+  ]
+}
