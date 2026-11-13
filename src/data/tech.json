@@ -134,6 +134,11 @@
           "icon": "skill-icons:androidstudio-dark"
         },
         {
+          "name": "Google Play Console",
+          "level": 3,
+          "icon": "simple-icons:googleplay"
+        },
+        {
           "name": "Git",
           "level": 3,
           "icon": "skill-icons:git"
