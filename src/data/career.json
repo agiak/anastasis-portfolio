@@ -4,11 +4,11 @@
     "role": "Senior Android Developer",
     "period": "Nov 2025 - Present",
     "type": "B2B Contract",
-    "description": "I'm part of the <span class='text-white font-semibold'>35–40 person Android team</span> behind <span class='text-white font-semibold'>Eurobank</span>'s mobile banking app. I led a large modularization effort, moving <span class='text-white font-semibold'>1,500+ files into 10+ new modules</span>, and brought <span class='text-white font-semibold'>unit tests to modules that had none</span>, so the team can ship changes with more confidence.",
+    "description": "I <span class='text-white font-semibold'>led the modularization</span> of <span class='text-white font-semibold'>Eurobank</span>'s mobile banking app, creating <span class='text-white font-semibold'>10+ feature modules</span> split along the project's architecture, and helped raise unit test coverage by <span class='text-white font-semibold'>6%</span> through that work and new unit tests. I own features for insurance and account products such as <span class='text-white font-semibold'>Happy Pet</span> pet insurance, under-18 accounts and the <span class='text-white font-semibold'>Travellers card</span>: new steps in their flows, Terms &amp; Conditions moved from static files to dynamic content, and new and fixed Google Analytics events. I also <span class='text-white font-semibold'>coordinated a production release</span>, owning the release branch and the release pipelines. Team of 35–40 Android developers.",
     "skills": [
-      "Android",
       "Kotlin",
       "Modularization",
+      "Release",
       "Banking"
     ],
     "apps": [
@@ -23,12 +23,12 @@
     "role": "Senior Android Developer",
     "period": "Jan 2024 - Nov 2025",
     "type": "Full time",
-    "description": "I helped move the <span class='text-white font-semibold'>Sportsbook</span> from WebView screens to <span class='text-white font-semibold'>native Android</span> with Jetpack Compose and MVI. I kept the <span class='text-white font-semibold'>QA rejection rate under 3%</span>, held the app at <span class='text-white font-semibold'>96% crash-free sessions</span> and reviewed <span class='text-white font-semibold'>50+ pull requests a quarter</span>. This is also where <span class='text-white font-semibold'>AI-assisted and agentic development</span> became part of my daily workflow (Cursor, Copilot, Claude, Gemini), helping me ship features faster without lowering quality.",
+    "description": "I built native <span class='text-white font-semibold'>Jetpack Compose/MVI</span> screens that replaced WebView in the <span class='text-white font-semibold'>Sportsbook</span>, owning parts of the <span class='text-white font-semibold'>Bet Slip</span> and the live and settled bet counters (corners, cards and more). I created <span class='text-white font-semibold'>8+ feature modules</span> in a team-wide effort that raised crash-free sessions from <span class='text-white font-semibold'>94.0% to 98%</span> through modularization and removal of duplicate code. For per-brand theming, I <span class='text-white font-semibold'>used AI to generate design tokens</span> (colors, dimensions, typography) from Figma designs, so each brand's look changes without code changes. I hit the quarterly target of a QA rejection rate below 3% and reviewed 50+ pull requests a quarter. Team of 20–25 Android developers.",
     "skills": [
       "Jetpack Compose",
       "MVI",
-      "IGaming",
-      "Agentic development"
+      "Modularization",
+      "AI tooling"
     ],
     "apps": [
       {
@@ -42,7 +42,7 @@
     "role": "Android Engineer",
     "period": "Oct 2022 - Jan 2024",
     "type": "Full time",
-    "description": "I worked on the <span class='text-white font-semibold'>Viva.com Terminal</span> app, used by <span class='text-white font-semibold'>1M+ people in 10+ European countries</span>. I added <span class='text-white font-semibold'>tablet and landscape support across 35+ screens</span>, which let the app run on new devices like cash machines and vending machines. I also built its <span class='text-white font-semibold'>Kiosk mode</span> and led the <span class='text-white font-semibold'>app rebranding</span>.",
+    "description": "I <span class='text-white font-semibold'>owned tablet and landscape support</span> across <span class='text-white font-semibold'>35+ screens</span> of the Viva.com Terminal POS app, used by <span class='text-white font-semibold'>1M+ people in 10+ countries</span>, working closely with designers and making the implementation decisions. That opened the app to cash machines and vending machines. I built its <span class='text-white font-semibold'>Kiosk mode</span> and, as main developer guiding a second developer, <span class='text-white font-semibold'>led the rebranding from VivaWallet to Viva.com</span>: new Lottie animations, new primary and secondary button colors, and updated components and assets.",
     "skills": [
       "Kotlin",
       "POS",
@@ -61,7 +61,7 @@
     "role": "Android Engineer",
     "period": "Oct 2019 - Oct 2022",
     "type": "Full time",
-    "description": "Where I grew into a <span class='text-white font-semibold'>tech lead</span>. I built and maintained <span class='text-white font-semibold'>15+ Android apps</span> for insurance and loyalty clients, often as the <span class='text-white font-semibold'>sole Android developer</span>, including the award-winning <span class='text-white font-semibold'>KRAFT Pro App</span> (Impact BITE Awards 2021) and Piraeus Bank's <span class='text-white font-semibold'>Yellow</span>, a top banking app in Greece <span class='text-white font-semibold'>five years in a row</span>. As tech lead I owned estimations, worked directly with clients and mentored junior developers.",
+    "description": "Where I grew into a <span class='text-white font-semibold'>tech lead</span>. I built and maintained <span class='text-white font-semibold'>15+ Android apps</span> for insurance and loyalty clients, often as the <span class='text-white font-semibold'>sole Android developer</span>. I helped build Piraeus Bank's <span class='text-white font-semibold'>Yellow</span> (a top banking app in Greece for five years) and the award-winning <span class='text-white font-semibold'>KRAFT Pro App</span> as part of the team, then supported both in production as the sole Android developer. As tech lead I owned estimations, worked directly with clients and mentored junior developers.",
     "skills": [
       "MVVM",
       "Coroutines",

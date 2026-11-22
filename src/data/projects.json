@@ -1,14 +1,14 @@
 [
   {
     "title": "Honestli — Digital Verification",
-    "description": "A freelance Android app that fights misinformation by turning photos and videos into tamper-proof Digital Originals, backed by C2PA metadata and blockchain anchoring.",
+    "description": "A freelance Android app that fights misinformation: a CameraX-based camera for verifiable photos and videos, secured with SSL pinning and on-device encryption.",
     "images": [
       "/images/honestli-cover.jpg"
     ],
     "tech": [
       "Kotlin",
-      "C2PA",
-      "Blockchain",
+      "CameraX",
+      "SSL pinning",
       "Play Store"
     ],
     "platforms": [
@@ -20,24 +20,19 @@
     "slug": "honestli",
     "tagline": "Digital verification against misinformation.",
     "overview": [
-      "Honestli is a freelance Android project built to fight misinformation. It turns photos and videos into tamper-proof Digital Originals that anyone can verify later.",
-      "Each Digital Original carries C2PA provenance metadata and is anchored on a blockchain, so its origin can be checked and any edit detected. Verified content can then be shared directly with newsrooms, without giving up the user's privacy."
+      "Honestli is a freelance Android project built to fight misinformation. People capture photos and videos that can be verified later as tamper-proof Digital Originals.",
+      "I built the Android app: a CameraX-based camera, secure sharing of verified content with newsrooms, and the app's security layer with SSL pinning and on-device encryption backed by the Android Keystore. Provenance and verification run on the backend."
     ],
     "features": [
       {
-        "icon": "mdi:shield-check-outline",
-        "title": "Digital Originals",
-        "description": "Create tamper-proof Digital Originals that can be verified at any time."
+        "icon": "mdi:camera-outline",
+        "title": "CameraX camera",
+        "description": "A custom camera built on CameraX for capturing the photos and videos that become Digital Originals."
       },
       {
-        "icon": "mdi:file-certificate-outline",
-        "title": "C2PA provenance",
-        "description": "Content carries C2PA metadata describing where it came from and how it was made."
-      },
-      {
-        "icon": "mdi:link-lock",
-        "title": "Blockchain anchoring",
-        "description": "Originals are anchored on a blockchain, so any later change can be detected."
+        "icon": "mdi:shield-lock-outline",
+        "title": "Security",
+        "description": "SSL pinning against man-in-the-middle attacks, and user data encrypted on the device with keys in the Android Keystore."
       },
       {
         "icon": "mdi:newspaper-variant-outline",
@@ -48,14 +43,15 @@
     "stack": [
       "Kotlin",
       "Android",
-      "C2PA",
-      "Blockchain"
+      "CameraX",
+      "SSL pinning",
+      "Android Keystore"
     ],
     "screenshots": []
   },
   {
     "title": "Cariboo — Car Management",
-    "description": "My own car-management app, live on Google Play: fuel, expenses, service reminders and statistics for every car you own. Built with agentic development, Claude Code and a Supabase backend.",
+    "description": "My own car-management app on Google Play: 50+ screens built solo with agentic development (Claude Code), a Supabase backend and GitHub Actions CI/CD.",
     "images": [
       "/images/cariboo-cover.jpg"
     ],
@@ -76,7 +72,7 @@
     "tagline": "Car management, simplified.",
     "overview": [
       "Cariboo is an offline-first Android app for everything that comes with owning a car: fuel, expenses, maintenance and paperwork, for one car or a whole household's.",
-      "I built it end to end, from the first screen to the Play Store release, through agentic development: Claude Code works as my coding agent on top of Jetpack Compose, Material 3 and Clean Architecture. Accounts and cloud sync run on Supabase, and releases are automated with a GitHub Actions CI/CD pipeline that bumps the version, builds a signed APK and publishes the release. It's available in English and Greek."
+      "I built and shipped it solo, alongside full-time work: 50+ screens, 400+ commits over 10 months, now at version 1.2 on Google Play, in English and Greek. It's agentic development in practice: I implemented it with Claude Code and GitHub Copilot, and created the screen designs and animations in Claude Design. Under the hood it's offline-first with Room, Hilt and WorkManager, with a Supabase backend for accounts and cloud sync, and a GitHub Actions CI/CD pipeline that builds and publishes signed releases."
     ],
     "features": [
       {
@@ -141,7 +137,9 @@
       "Supabase",
       "OpenAI API",
       "GitHub Actions",
-      "Claude Code"
+      "Claude Code",
+      "Claude Design",
+      "GitHub Copilot"
     ],
     "screenshots": []
   }
